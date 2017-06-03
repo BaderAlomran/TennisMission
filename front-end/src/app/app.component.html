@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row mt30 mb30">
+    <div class="col-md-2">
+    <!--<div class="col-md-12">
+        <button class="btn btn-success form-control" routerLink="/players">Player List</button>
+        </div>
+        <div class="col-md-12">
+        
+        </div>
+     </div>-->
+     
+     <div class="list-group" *ngIf="abc">
+        <button class="list-group-item" routerLink="/players">List of Players</button>
+        <button class="list-group-item" routerLink="/data">Statistics</button>
+        <button class="list-group-item" routerLink="/chat">Chat</button> 
+        <button class="list-group-item" (click)="SingOff()">Sing off</button>
+               
+    </div>
+    </div>
+    <div class="col-md-10">
+<router-outlet></router-outlet>
+</div>
+</div>
+</div>
+

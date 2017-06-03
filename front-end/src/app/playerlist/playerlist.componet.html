@@ -1,0 +1,47 @@
+<div class="row panel playlist" *ngFor="let p of Player">
+    <div class="col-md-12 p0 detail-header panel-headering">
+        <div class="col-md-1" (click)="Details(p._id)">
+            <button class="btn btn-success btn-sm">+</button>
+        </div>
+    <div class="col-md-3">
+        <h5>{{p.username}}</h5>
+    </div>
+    <div class="col-md-4">
+        <h5>{{p.email}}</h5>
+    </div>
+    <div class="col-md-4" *ngIf="p.selection=='TENNIS_COACH'">
+        <h5>Tennis Coach</h5>
+    </div>
+    <div class="col-md-4" *ngIf="p.selection=='TENNIS_PLAYER'">
+      <h5>Tennis Player</h5>
+    </div>
+</div>
+  
+ <div class="col-md-12 panel-body" *ngIf="Data.User_id==p._id">
+    <!--<div class="alert alert-success">
+      <span>{{Data.NTRP}}</span>
+      <span>{{Data.NFUE}}</span>
+      <span>{{Data.NFFE}}</span>
+      <span>{{Data.NBUE}}</span>
+      <span>{{Data.NBFE}}</span>
+      <span>{{Data.OFUE}}</span>
+      <span>{{Data.OFFE}}</span>
+      <span>{{Data.OBUE}}</span>
+      <span>{{Data.OBFE}}</span>
+      <span>{{Data.DF}}</span>
+      <span>{{Data.FS_pct}}</span>
+      <span>{{Data.FSW_pct}}</span>
+      <span>{{Data.FW}}</span>
+      <span>{{Data.BW}}</span>
+      <span>{{Data.PNW}}</span>
+      <span>{{Data.PNL}}</span>
+      <span>{{Data.PNLN}}</span>
+      <span>{{Data.PNLW}}</span>
+      <span>{{Data.OW}}</span>
+      <span>{{Data.OFE}}</span>
+      <span>{{Data.OUE}}</span>      
+    </div>-->
+    <div class="alert alert-success" *ngFor="let d of Data.result">
+      <strong>{{d.Message}}</strong> 
+    </div>
+  </div>

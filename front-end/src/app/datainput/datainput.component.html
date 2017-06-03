@@ -1,0 +1,95 @@
+    <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+      <div class="form-group">
+        <label>NTRP rating - Scale of 3.5-7</label>
+        <input type="text" required="true" class="form-control" id="name" [(ngModel)]="NTRP" name="NTRP" placeholder="NTRP">
+      </div>
+      <div class="form-group">
+        <label>Net Forehand Unforced Error</label>
+        <input type="number" required="true" class="form-control" id="name" [(ngModel)]="NFUE" name="NFUE" placeholder="NFUE">
+      </div>
+      <div class="form-group">
+        <label>Net Forehand Forced Error</label>
+        <input type="number" required="true" class="form-control" id="name" [(ngModel)]="NFFE" name="NFFE" placeholder="NFFE">
+      </div>
+      <div class="form-group">
+        <label>Net backhand unforced error</label>
+        <input type="number" required="true" class="form-control" id="name" [(ngModel)]="NBUE" name="NBUE" placeholder="NBUE">
+      </div>
+      <div class="form-group">
+        <label>Net Backhand forced error</label>
+        <input type="number" required="true" class="form-control" id="name" [(ngModel)]="NBFE" name="NBFE" placeholder="NBFE">
+      </div>
+      <div class="form-group">
+        <label>Out Forehand Unforced Error</label>
+        <input type="number" required="true" class="form-control" id="name" [(ngModel)]="OFUE" name="OFUE" placeholder="OFUE">
+      </div>
+      <div class="form-group">
+        <label>Out Forehand Forced Error</label>
+        <input type="number" required="true" class="form-control" id="name" [(ngModel)]="OFFE" name="OFFE" placeholder="OFFE">
+      </div>
+      <div class="form-group">
+        <label>Out backhand unforced error</label>
+        <input type="number" required="true" class="form-control" [(ngModel)]="OBUE" name="OBUE" placeholder="OBUE">
+      </div>
+      <div class="form-group">
+        <label>Out Backhand forced error</label>
+        <input type="number" required="true" class="form-control" [(ngModel)]="OBFE" name="OBFE" placeholder="OBFE">
+      </div>
+      <div class="form-group">
+        <label>double faults</label>
+        <input type="number" required="true" class="form-control" id="name" [(ngModel)]="DF" name="DF" placeholder="DF">
+      </div>
+      <div class="form-group">
+        <label>first serve percentage</label>
+        <input type="number" required="true" class="form-control" id="name" [(ngModel)]="FS_pct" name="FS_pct" placeholder="FS_pct">
+      </div>
+      <div class="form-group">
+        <label>First serve won percentage</label>
+        <input type="number" required="true" class="form-control" id="name" 
+        [(ngModel)]="FSW_pct" name="FSW_pct" placeholder="FSW_pct">
+      </div>
+      <div class="form-group">
+        <label>Forehand winners</label>
+        <input type="number" required="true" class="form-control" id="name" [(ngModel)]="FW" name="FW" placeholder="FW">
+      </div>
+      <div class="form-group">
+        <label>Backhand winners</label>
+        <input type="number" required="true" class="form-control" id="name" [(ngModel)]="BW" name="BW" placeholder="BW">
+      </div>
+      <!--<div class="form-group">
+        <label>Points Net Won</label>
+        <input type="number" required="true" class="form-control" id="name" [(ngModel)]="OFUE" name="OFUE" placeholder="OFUE">
+      </div>-->
+      <div class="form-group">
+       <label>Points Net Won</label>
+        <input type="number" required="true" class="form-control" id="name" [(ngModel)]="PNW" name="PNW" placeholder="PNW">
+      </div>
+      <div class="form-group">
+        <label>Points Net Lost</label>
+        <input type="number" required="true" class="form-control" [(ngModel)]="PNL" name="PNL" placeholder="PNL">
+      </div>
+      <div class="form-group">
+        <label>Points Net Lost Net</label>
+        <input type="number" required="true" class="form-control" [(ngModel)]="PNLN" name="PNLN" placeholder="PNLN">
+      </div>
+      <div class="form-group">
+        <label>Points Net Lost Winner</label>
+        <input type="number" required="true" class="form-control" [(ngModel)]="PNLW" name="PNLW" placeholder="PNLW">
+      </div>
+      <div class="form-group">
+        <label>Opponent winners</label>
+        <input type="number" required="true" class="form-control" [(ngModel)]="OW" name="OW" placeholder="OW">
+      </div>
+      <div class="form-group">
+        <label>Opponent forced error</label>
+        <input type="number" required="true" class="form-control" [(ngModel)]="OFE" name="OFE" placeholder="OFE">
+      </div>
+      <div class="form-group">
+        <label>Opponent unforced error</label>
+        <input type="number" required="true" class="form-control" [(ngModel)]="OUE" name="OUE" placeholder="OUE">
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+    <div class="alert alert-success" *ngFor="let d of data">
+      <strong>{{d.Message}}</strong> 
+    </div>
