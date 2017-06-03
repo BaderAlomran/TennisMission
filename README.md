@@ -2,8 +2,6 @@
 
 # Author: Bader Alomran
 
-# Project can be downloaded from
-
 #What is Tennis Mission?
 
 Tennis Mission is a Web Application that functions as a tennis expert. The user (tennis player) must first sign up where login information is stored in a MongoDB database.
